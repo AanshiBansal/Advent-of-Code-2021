@@ -20,12 +20,12 @@ void dfs(string curr, unordered_map<string, vector<string> >&mp, unordered_map<s
             return;
     }
     if(curr[0]>='a' && curr[0]<='z'){
-        int help=0;
+        int count=0;
         for(auto itr=s.begin();itr!=s.end();itr++){
             if(itr->second == 2)
-                help++;
+                count++;
         }
-        if(help==0 || s[curr]==0){
+        if(s[curr]==0 || count==0){
             s[curr]++;
             for( int i=0;i<mp[curr].size();i++){
                 dfs(mp[curr][i], mp, s, ans);
