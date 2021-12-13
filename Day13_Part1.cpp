@@ -9,12 +9,12 @@ int main() {
 	for(int j=0;j<n;j++){
 	    string str;
 	    cin>>str;
-        stringstream ss(str);
-        for (int i; ss >> i;) {
-            v[j].push_back(i);
-            if (ss.peek() == ',')
-                ss.ignore();
-        }
+		stringstream ss(str);
+		for (int i; ss >> i;) {
+			v[j].push_back(i);
+			if (ss.peek() == ',')
+				ss.ignore();
+		}
 	}
 	for(int i=0;i<n;i++){
 	    if(v[i][0]>655){
