@@ -18,8 +18,11 @@ int main() {
 	}
 	int a=1000;
 	int b=1000;
-	char d[] = {'x','y','x','y','x','y','x','y','x','y','y','y'};
-	int num[] = {655, 447, 327, 223, 163, 111, 81, 55, 40, 27, 13, 6};
+	vector<char>d(12);
+	vector<int>num(12);
+	for(int i=0;i<12;i++){
+		cin>>d[i]>>num[i];
+	}
 	for(int z=0;z<12;z++){
 	    if(d[z]=='x'){
 	        for(int i=0;i<n;i++){
